@@ -123,6 +123,8 @@ Docker is working
 FastAPI is running in a container
 Port mapping & security groups are correct
 
+![alt text](image.png)
+
 - How to stop/remove the container when done
 #stop the container
 sudo docker stop myapp-container
