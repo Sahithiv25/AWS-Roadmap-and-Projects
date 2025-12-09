@@ -30,12 +30,13 @@ Interview Answer: IAM roles are assigned to AWS services or applications and pro
 
 #### IAM Policies
 JSON documents that say Allow or Deny actions on AWS resources.
-Example policy:
+- Example policy:
 {
   "Effect": "Allow",
   "Action": ["s3:PutObject"],
   "Resource": ["arn:aws:s3:::my-bucket/*"]
 }
+
 Interview Answer: IAM policies define permissions in AWS. They specify which actions are allowed or denied on which resources.
 
 #### Security Groups
