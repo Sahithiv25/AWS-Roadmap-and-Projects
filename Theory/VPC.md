@@ -8,7 +8,6 @@ A VPC gives:
 ✔ Control over networking
 ✔ Separation between public and private resources
 ✔ Security boundaries
-Every serious company uses VPCs to isolate workloads and enforce security.
 
 #### VPC = Your private network
 When you create a VPC, you assign it a CIDR block (IP range):
@@ -112,18 +111,6 @@ Deny inbound 22 from anywhere
 
 “NACLs are stateless firewalls at the subnet level that can explicitly allow or deny traffic.”
 
-#### How everything works together
-VPC (10.0.0.0/16)
-│
-├── Public Subnet (10.0.1.0/24)
-│   ├── Route table → Internet Gateway
-│   └── EC2 instance with public IP
-│
-├── Private Subnet (10.0.2.0/24)
-│   ├── Route table → NAT Gateway → Internet Gateway
-│   └── RDS/Backend servers (no public IP)
-│
-└── Security Groups + NACLs control traffic
 
 #### Questions
 Q1: What is the difference between public and private subnets?
