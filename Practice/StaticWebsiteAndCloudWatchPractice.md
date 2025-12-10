@@ -6,23 +6,6 @@ Check CloudWatch metrics (S3 request metrics)
 Explore CloudWatch logs
 
 #### Step -1 Create a simple HTML website
-Ex:
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My First S3 Website</title>
-    <style>
-        body {
-            background-color: #f7f7ff;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 100px;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
-</head>
 <body>
     <h1>Hello from S3 Static Website Hosting!</h1>
     <p>This site is hosted on Amazon S3.</p>
