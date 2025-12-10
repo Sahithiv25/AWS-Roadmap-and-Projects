@@ -4,7 +4,7 @@
 3️⃣ Add 1 public + 1 private subnet
 
 #### Draw your VPC Diagram
-![alt text](images/VPC_diagram.png)
+![alt text](Practice\Images\VPC_diagram.png)
 
 #### Create a new VPC mannually
 Go to: AWS Console → VPC → Your VPCs → Create VPC
@@ -47,6 +47,8 @@ Go to: Route Tables → Create Route Table
 | ----- | -------------- |
 | Name  | `public-rt`    |
 | VPC   | `learning-vpc` |
+--------------------------
+
 Click create
 Now edit routes:
 Select public-rt
