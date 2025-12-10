@@ -37,25 +37,7 @@ This is public URL.
 ALB → Target Group → EC2 → Your App
 You don’t need the EC2 public IP anymore, the load balancer handles everything.
 
-Internet ----> ALB [DNS: my-alb.amazonaws.com]
-                            |
-                            |
-                            V
-                        Listener        
-                    (port 80 rule)
-                            |
-                            |
-                            V
-                        Target Group
-                        Health checks
-                            |
-                            |
-                 --------------------
-                 |                  |
-                 |                  |
-                 V                  V                       Healthy EC2 #1    Healthy EC2 #2 
-            (serves traffic)        (serves traffic)
-            
+Internet -> ALB [DNS: my-alb.amazonaws.com] -> Listener (port 80 rule) -> Target Group Health checks - Healthy EC1 or Healthy EC2 and so on.   
 
 I set up an Application Load Balancer to distribute HTTP traffic across EC2 instances inside a public subnet. I created a target group with health checks, attached my EC2 instance to it, and configured a listener on port 80. After that, the ALB provided a DNS name that publicly routed traffic to my application. This enables fault tolerance, scaling, and high availability.                               
                 
