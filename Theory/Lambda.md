@@ -21,3 +21,12 @@ Ex: def lambdahandler(event, context):
 3. Event object - Contains data passed to lambda
 4. context object - has metadata: function name, timeout, request ID
 5. Cold start vs warm start - Lambda uses execution environments. The first call may have a cold start; subsequent calls reuse the environment, to reduce latency.
+
+## Amazon API Gateway
+API Gateway is a fully managed service for creating, securing, and scaling APIs.
+It is used to:
+- Receive HTTP requests
+- Route them to Lambda, ECS, EC2, or backend services
+- Handle authentication & rate limiting
+- Transform requests & responses
+- Provide custom domains
