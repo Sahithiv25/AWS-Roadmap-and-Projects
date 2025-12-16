@@ -34,3 +34,6 @@ It is used to:
 #### Questions
 1. When would you choose Lambda?
 For event-driven workloads, unpredictable traffic, microservices, scheduled jobs, and lightweight APIs.
+
+2. Lambda vs EC2?
+Lambda is serverless and scales automatically. EC2 gives full control but requires provisioning and management.
