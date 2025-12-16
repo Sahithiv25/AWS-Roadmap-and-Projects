@@ -30,3 +30,7 @@ It is used to:
 - Handle authentication & rate limiting
 - Transform requests & responses
 - Provide custom domains
+
+#### Questions
+1. When would you choose Lambda?
+For event-driven workloads, unpredictable traffic, microservices, scheduled jobs, and lightweight APIs.
